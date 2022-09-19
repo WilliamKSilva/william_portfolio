@@ -1,4 +1,5 @@
-import { Flex, HStack, Text, Icon, Container, Box } from "@chakra-ui/react";
+import { Flex, HStack, Text, Icon, Box, Link as ChakraLink } from "@chakra-ui/react";
+import Link from "next/link";
 import { GiBookCover, GiHamburgerMenu } from 'react-icons/gi';
 
 export const Header = () => {
@@ -6,10 +7,15 @@ export const Header = () => {
     <Box w="100vw" bg="blackAlpha.400">
       <Flex w="100%" align="center" p="3.5" justify="space-between">
         <HStack gap={2}>
-          <Icon as={GiBookCover} color="pink.300" w="8" h="8" />
-          <Text fontSize="lg" color="pink.300">William Kelvin</Text>
-        </HStack>
-        
+          <Link href="/">
+            <ChakraLink>
+              <Flex as="a" direction="row" gap={2} align="center">
+                <Icon as={GiBookCover} color="pink.300" w="8" h="8" />
+                <Text fontSize="lg" color="pink.300">William Kelvin</Text>
+              </Flex>
+            </ChakraLink>
+          </Link>
+        </HStack>        
       </Flex>
     </Box>
   );

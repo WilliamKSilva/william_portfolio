@@ -8,7 +8,7 @@ type ProjectCardProps = {
 export const ProjectCard = ({ title, description }: ProjectCardProps) => {
   return (
     <Container w="80%" bg="blackAlpha.400" p="5" border="1px" borderColor="whiteAlpha.200">
-      <Flex gap={5} align="flex-start" justify="space-between" direction="column">
+      <Flex gap={2} align="flex-start" justify="space-between" direction="column" scrollBehavior="auto">
         <Text fontSize="2xl" color="pink.300" fontWeight="semibold">
           {title}
         </Text>
