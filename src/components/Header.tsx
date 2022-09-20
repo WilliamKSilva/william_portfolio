@@ -8,12 +8,10 @@ export const Header = () => {
       <Flex w="100%" align="center" p="3.5" justify="space-between">
         <HStack gap={2}>
           <Link href="/">
-            <ChakraLink>
-              <Flex as="a" direction="row" gap={2} align="center">
-                <Icon as={GiBookCover} color="pink.300" w="8" h="8" />
-                <Text fontSize="lg" color="pink.300">William Kelvin</Text>
-              </Flex>
-            </ChakraLink>
+            <Flex as="a" direction="row" gap={2} align="center" _hover={{ cursor: 'pointer' }}>
+              <Icon as={GiBookCover} color="pink.300" w="8" h="8" />
+              <Text fontSize="lg" color="pink.300">William Kelvin</Text>
+            </Flex>
           </Link>
         </HStack>        
       </Flex>
